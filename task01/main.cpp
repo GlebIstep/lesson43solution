@@ -20,7 +20,11 @@ int main() {
 
 	bool result = search_linear(array, length, value);
 
-	print(result ? "Yes" : "No");
+	print(result ? "Yes\n" : "No\n");
+
+	print("Index of first element - " + to_string(get_first_element(array, length, value)) + "\n");
+	print("Index of last element - " + to_string(get_last_element(array, length, value)) + "\n");
+
 
 	return 0;
 }
